@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'MADE Soulmaze Outline', sans-serif;*/
+    font-family: 'MADE Soulmaze', sans-serif;
+}
+
+@import url('https://fonts.cdnfonts.com/css/made-soulmaze');
+
+
+body {
+    background: black;
+}
+
+.full-page {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    position: fixed;
+    left: 15vh;
+    top: 10vh;
+}
+
+.logo h1 {
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    right: 15vh;
+    top: 10vh;
+}
+
+.social-media {
+    position: fixed;
+    left: 15vh;
+    bottom: 10vh;
+}
+
+.copyright {
+    position: fixed;
+    right: 15vh;
+    bottom: 10vh;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: white;
+}
+
+.copyright p span {
+    color: #ef0303;
+}
+
+.navbar ul, .social-media ul {
+    margin: 0;
+}
+
+.navbar ul li, .social-media ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a, .social-media ul li a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.navbar ul li a:hover, .social-media ul li a:hover {
+    color: #ef0303;
+}
+
+.navbar ul li a:active {
+    color: #ef0303;
+}
+
+.main-title h2 {
+    position: fixed;
+    transform: translate(-50%);
+    left: 50%;
+    top: 10vh;
+    text-align: center;
+    color: #444;
+    font-size: 70px;
+    font-style: italic;
+
+}
+
+.main-title h2::after {
+    content: 'WALLPAPERS';
+    color: transparent;
+    -webkit-text-stroke: .2px #444;
+    left: 0;
+    top: 15px;
+    position: absolute;
+}
+
+.swiper-container {
+    width: 100%;
+    transform: translateY(-50%);
+    top: 58%;
+}
+
+.swiper-slide {
+    width: 50%;
+}
+
+.swiper-wrapper {
+    transition-delay: .5s;
+}
+
+.port-img img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.port-img::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 4px);
+    background-image: -moz-linear-gradient(0deg, rgb(195,20,50) 0%, rgb(204,18,26) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(195,20,50) 0%, rgb(204,18,26) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(195,20,50) 0%, rgb(204,18,26) 100%);
+    mix-blend-mode: multiply;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+
+.port-img:hover::after {
+    opacity: .5;
+}
+
+.port-text {
+    position: absolute;
+    top: 50%;
+    margin-left: -50px;
+    transform: translateY(-50px);
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+}
+
+.port-text h4 {
+    font-size: 40px;
+    color: white;
+    position: relative;
+}
+
+.port-text h4 span {
+    position: absolute;
+    height: 50px;
+}
+
+
+#swiper-prev {
+    position: fixed;
+    left: 2vh;
+    bottom: 20%;
+    height: 60vh;
+    width: 30vh;
+    z-index: 3;
+    background: transparent;
+    border: 0;
+    color: rgba(255, 255, 255, 0.055);
+}
+
+#swiper-next {
+    position: fixed;
+    right: 2vh;
+    bottom: 20%;
+    height: 60vh;
+    width: 30vh;
+    z-index: 3;
+    background: transparent;
+    border: 0;
+    color: wheat;
+}
+
+#swiper-next img {
+    width: 10vh;
+    opacity: 0.1;
+}
+
+#swiper-prev img {
+    width: 10vh;
+    opacity: 0.1;
+}
